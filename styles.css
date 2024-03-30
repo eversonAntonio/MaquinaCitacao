@@ -1,12 +1,19 @@
+:root {
+  /* declaração de variáveis */
+  --cor-padrao : rgb(52, 34, 36);
+}
+
 body {
+  /* configurações para todo o projeto */
   background-color: blue;
   margin: 0;
   font-family: "Raleway, sans-serif";
 }
 
 #container {
-  background-color: rgb(52, 34, 36);
-  color: rgb(52, 34, 36);
+  /* configurações para o container principal */
+  background-color: var(--cor-padrao);
+  color: var(--cor-padrao);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,47 +22,56 @@ body {
 }
 
 #quote-box {
+  /* configurações para a caixa do conteúdo */
   background-color: white;
   width: 500px;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 40px;
 }
 
 #text {
+  /* configurações de tamanho da letra e alinhamento do texto da citação */
   font-size: 28px;
   display: block;
   text-align: center;
 }
 
 #text i {
+  /* tamanho da aspa do início */
   font-size: 28px;
 }
 
 #author {
+  /* alinhamento e tamanho do texto referente ao nome do autor */
   text-align: right;
   font-size: 16px;
 }
 
 .botao {
+  /* configurações do botão */
   height: 38px;
-  background-color: rgb(52, 34, 36);
-  border-radius: 3px;
+  background-color: var(--cor-padrao);
+  border-radius: 5px;
+  border: none;
   color: white;
   width: auto;
   transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
 
 .botao i {
+  /* configuração de tamanho e largura do botão com icone */
   font-size: 19px;
   width: 38px;
 }
 
 .botao:hover {
+  /* configuração para aumentar o tamanho do botão ao passar o mouse por cima */
   transform: scale(1.2);
 }
 
 #container-b {
+  /* configuração do container que contém os botões */
   display: flex;
   justify-content: space-between;
   height: auto;
